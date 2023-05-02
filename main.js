@@ -80,7 +80,7 @@ button_decimal = document.getElementById(".").addEventListener("click", ()=>{
 });
 button_equal = document.getElementById("=").addEventListener("click", ()=>{
  
-    console.log(expression);
+    screen.innerHTML = (eval(String(expression)));
     
  
 });
@@ -99,6 +99,11 @@ button_AC = document.getElementById("AC").addEventListener("click", ()=>{
     expression = "";
     screen.innerHTML = expression;
 
+})
+
+button_percent = document.getElementById("%").addEventListener("click", () =>{
+    expression += "%";
+    screen.innerHTML = expression;
 })
 
 
